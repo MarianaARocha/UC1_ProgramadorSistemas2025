@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livraria da Mari - Cadastro</title>
+</head>
+
+<body>
+
+    <h1>Livaria da Mari</h1>
+    <a href="./pag_inicial.html">Início</a>
+    <br />
+    <a href="./pag_entrar.html">Entrar |</a>
+    <a href="./pag_cadastro.html">Cadastrar</a>
+    <br />
+    <a href="./pag.contato.html">Contato</a>
+
+    <hr />
+
+    <h2>Cadastre-se</h2>
+    <p>Crie uma conta para poder comprar nossos livros e aproveitar nossas promoções!</i></p>
+    <p>Você já tem uma conta? Acesse o seu painel,<a href="./pag_entrar.html">Clique aqui.</a></p>
+
+
+    <form action="./pag_parabens.html">
+
+        <h3>Informações pessoais</h3>
+
+        <label>
+            Nome completo <br />
+            <input type="text" required>
+            <br />
+            <br />
+        </label>
+
+        <label>
+            Data de nascimento<br />
+            <input type="date" required>
+            <br />
+            <br />
+        </label>
+
+        <label>
+            Endereço <br />
+            <input type="text" placeholder="Rua" required>
+            <input type="text" placeholder="Número" required>
+            <input type="text" placeholder="Bairro" required>
+        </label>
+
+        <br />
+        <br />
+
+        <h4>Você está se cadastrando para:</h4>
+
+
+        <!--O name é como se fosse um grupo, sendo assim, se todos estão no mesmo grupo você poderá selecionar somente uma opção-->
+        <input type="radio" name="intencao" required>
+        Comprar livros
+        <br />
+        <input type="radio" name="intencao" required>
+        Vender meus livros
+        <br />
+        <input type="radio" name="intencao" required>
+        Trocar livros
+
+        <br />
+        <br />
+
+        <label>
+            <h4>Dados de login</h4>
+            Email <br />
+            <input type="email" required>
+        </label>
+
+        <br /><br />
+
+        <label>
+            Senha<br />
+            <input type="password" minlength="6" required>
+        </label>
+
+        <br />
+        <br />
+
+        <label>
+            <input type="checkbox">
+            Quero receber promoções no meu email
+        </label>
+
+        <br />
+        <br />
+
+        <button>Salvar e continuar</button>
+
+
+        </label>
+
+    </form>
+
+</body>
+
+</html>
