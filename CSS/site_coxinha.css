@@ -1,0 +1,78 @@
+/*
+    Paleta de cores:
+    cor primária rosa: #e91e63
+    cor primária escura rosa: #c2185b
+    cor primária clara rosa: #f8bbd0
+    cor primária texto preto: #212121
+    cor secundária texto cinza: #757575
+    cor texto/icons branco: #FFFFFF
+    ultima cor cinza claro: #BDBDBD
+    
+    */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    /*Muda a imagem do ponteiro do mouse*/
+    cursor: default;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+
+}
+
+.cabecalho {
+    background-color: #e91e63;
+    color: #ffffffe8;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    /*Aumenta o espaço por fora na parte debabaixo do item*/
+
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 20px;
+}
+
+.cabecalho .enfase {
+    font-size: 15px;
+    color: #ffffffea(255, 255, 255, 0.918);
+}
+
+.cabecalho .subtitulo {
+    font-size: 15px;
+    color: #f8bbd0;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.container {
+    margin-left: 25%;
+}
+
+.botaoPrincipal {
+    background-color: #c2185b;
+    color: #ffffffdc;
+    /*Remove a borda do botão*/
+    border: none;
+    font-size: 15px;
+    /*Aumenta o espaço por dentro*/
+    padding: 10px;
+    /*Arrendonda a borda*/
+    border-radius: 5px;
+    /*Muda a imagem do ponteiro do mouse*/
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.botaoLoginCadastro {
+    background-color: transparent; /*transparent deixa o fundo do botão transparente*/
+    border: 3.5px solid #c2185b;
+    padding: 10px;
+    border-radius: 7.5px;
+    color: #c2185b;
+}
