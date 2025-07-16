@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    /*Muda a imagem do ponteiro do mouse*/
+    cursor: default;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    color: #333333;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menuEsquerdo{
+    display: flex;
+    align-items: center;
+}
+
+.menuDireito{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #656565;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.menu a:hover {
+    text-decoration: underline 2px #262626;
+
+}
+
+.slide {
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, rgb(203, 195, 240) 0%, rgb(146, 175, 236) 50%, rgb(148, 185, 245) 80%);
+    padding: 200px 120px; /*padding -> 200px 300px = 200 em cima e embaixo e 300 nas laterais*/
+}
+
+.slide h2{
+    font-size: 20px;
+}
+.slide p{
+    font-size: 17px;
+    width: 400px;
+}
+
+.btnPrincipal {
+    background-color: #0867b8;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btnPrincipal:hover{
+    background-color: #075da6;
+    transition: 0.3s; /*tempo que demora pro botão mudar de cor*/
+}
+
+.btnSlide{
+  display: flex;
+    
+    
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+
+.cardProduto{
+    width: 300px;
+    border: 1px solid #eee;
+    box-shadow: 0px 2px 3px #eee ; /*Sombra no card*/
+
+    
+}
+
+
+.cardProduto img{
+    width: 100%;
+}
+
+.cardProduto .cardTexto{
+    padding: 15px;
+}
+
+.cardProduto .cardTexto .cardTitulo{
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0;
+}
+
+.cardProduto .cardTexto .btnPrincipal{
+    width: 100%;
+}

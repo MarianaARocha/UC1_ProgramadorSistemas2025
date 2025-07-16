@@ -1,0 +1,27 @@
+/*TODOS ABAIXO SÓ FUNCIONAM COM FLEX*/
+
+.menu {
+    /* Utilizado para alinhar os conteúdos*/
+    display: flex;
+    /*block: padrão/desoculta; none: deixa oculto; flex: deixa um ao lado do outro */
+    flex-direction: row;
+    /*column: um embaixo do outro; row: na mesma linha/um ao lado do outro*/
+    justify-content: space-between;
+    /*espaçamento igualitário entre os filhos*/
+    /* justify-content: space-around; espaçamento entre os itens e também  nas bordas que encostam na lateral da tela */
+    align-items: center;
+    /*alinha no meio (pra cima e pra baixo). Alinha no centro do maior iten; end: tudo para baixo; top: para cima */
+}
+
+.itensMenu {
+    /* Utilizado para alinhar os conteúdos*/
+    display: flex;
+    gap: 30px ; /*espaço entre os itens*/
+}
+
+
+.imagem {
+    /* Utilizado para alinhar os conteúdos*/
+    display: flex;
+    align-items: center;
+}

@@ -50,7 +50,13 @@ p {
 }
 
 .container {
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
 }
 
 .botaoPrincipal {
@@ -76,3 +82,4 @@ p {
     border-radius: 7.5px;
     color: #c2185b;
 }
+
