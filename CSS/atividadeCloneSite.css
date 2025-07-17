@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    cursor: default;
+    font-family: "Rubik", sans-serif;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo .telaInicial {
+    background-image: url("https://casteloplaza.com.br/wp-content/uploads/2019/03/cropped-castelo_24h-cafeteria_balcao-1280x720px.jpg");
+    background-position: bottom;
+     margin-bottom: 50px;
+}
+
+.conteudo .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+     margin-left: 100px;
+     margin-right: 100px;
+      background-color: rgba(0, 0, 0, 0.301);
+
+}
+.conteudo .menu .logo img {
+    width: 200px;
+
+}
+
+.conteudo .menu .menuItens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .menu a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 28px;
+}
+
+.conteudo .btnSaibaMais {
+    background-color: #946d3a;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.conteudo .btnFaleConosco {
+    background-color: #d69739;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.conteudo .slideTxt {
+    color: #eeeded;
+     margin: 100px;
+
+
+}
+
+.conteudo .slideTxt h2 {
+    font-size: 50px;
+    width: 400px;
+    font-weight: bold;
+}
+
+.conteudo .slideTxt p {
+    width: 500px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.conteudo .slideTxt button {
+    padding: 10px 30px;
+}
+
+.conteudo .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    
+}
+
+.conteudo .cards div{
+    width: 600px;
+    height: 200px;
+    border: 1px solid #eee;
+    box-shadow: 0px 20px 20px #eee ; /*Sombra no card*/
+    padding: 20px;
+}
+
+.conteudo .solucoes{
+    display: flex;
+    justify-content: space-between;
+     margin-left: 100px;
+    margin-right: 100px;
+    background-color: blue;
+}
+
+
+.conteudo .solucoes .btnSolucoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.conteudo .solucoes button{
+
+}
