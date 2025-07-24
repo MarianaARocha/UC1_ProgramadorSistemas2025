@@ -14,7 +14,7 @@ body {
 }
 
 .conteudo .telaInicial {
-    background-image: url("https://casteloplaza.com.br/wp-content/uploads/2019/03/cropped-castelo_24h-cafeteria_balcao-1280x720px.jpg");
+    background-image: url("./slide-01.jpg");
     background-position: bottom;
      margin-bottom: 50px;
 }
@@ -26,7 +26,7 @@ body {
     margin-bottom: 150px;
      margin-left: 100px;
      margin-right: 100px;
-      background-color: rgba(0, 0, 0, 0.301);
+    
 
 }
 .conteudo .menu .logo img {
@@ -48,7 +48,7 @@ body {
 }
 
 .conteudo .btnSaibaMais {
-    background-color: #946d3a;
+    background-color: #43ba7f;
     border-radius: 6px;
     font-weight: 500;
     color: #fff;
@@ -57,7 +57,7 @@ body {
 }
 
 .conteudo .btnFaleConosco {
-    background-color: #d69739;
+    background-color:  #ff511a;
     border-radius: 6px;
     font-weight: 500;
     color: #fff;
@@ -84,8 +84,13 @@ body {
     margin-bottom: 50px;
 }
 
+.conteudo .slideTxt .tituloLaranja {
+    color: #ff511a;
+}
+
 .conteudo .slideTxt button {
     padding: 10px 30px;
+    margin: 5px;
 }
 
 .conteudo .cards {
@@ -112,6 +117,7 @@ body {
      margin-left: 100px;
     margin-right: 100px;
     background-color: blue;
+    background-image: url("./calculator-bg.jpg");
 }
 
 
@@ -119,9 +125,5 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-
-}
-
-.conteudo .solucoes button{
 
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <h1>DOM</h1>
+    <p>Manipular HTML via JavaScript usando DOM</p>
+
+
+    <p>Digite seu nome: </p>
+    <input id="inputNome">
+    <button onclick="salvar()" >Salvar</button>
+
+    <p>Seja bem-vindo(a) <span id="textoNome">....</span></p>
+
+    <script>
+
+        function salvar(){
+           let nome =  document.querySelector("#inputNome").value
+           document.querySelector("#inputNome").value = "" //ao clicar no salvar, além de mostrar o nome no comando abaixo, vai limpar o input
+            document.querySelector("#textoNome").innerHTML = nome //vai mostrar o valor da tag nome
+            //document.querySelector("#textoNome").innerHTML = "Preparando o pedido" //vai alterar para o texto que foi colocado entre parenteses
+            
+        }
+
+
+
+    </script>
+</body>
+</html>

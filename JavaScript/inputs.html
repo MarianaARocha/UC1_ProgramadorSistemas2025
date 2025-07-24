@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs - Inserção de dados pelo usuário</title>
+</head>
+
+<body>
+    <script>
+        // // Variáveis
+        // const nome = "Mariana Amelia"
+        // console.log("Olá! Seja bem-vinda "+nome)
+
+        // const sobrenome = "Rocha"
+        // console.log("Seu nome completo é "+nome+ " " + sobrenome)
+
+        // const nomeCompleto = nome + " " + sobrenome
+        // console.log("Seu nome completo é: "+nomeCompleto)
+
+
+        //Variável variavél
+
+        let nome
+        nome = prompt ("Digite o nome do funcionário: ")
+        console.log("Seja bem-vindo(a): " + nome)
+
+        let sobrenome
+        sobrenome = prompt ("Digite o sobrenome: ")
+
+        let nomeCompleto = nome + " " + sobrenome
+        alert("Seja bem-vindo(a): "+ nomeCompleto)
+        
+        let salario
+        salario = prompt ("Digite o salário do(a): " + nome)
+        salario = parseInt(salario) //converte o salário para número
+        
+        let bonificacao
+        bonificacao = prompt ("Digite a bonificação da " + nomeCompleto)
+        bonificacao = parseInt(bonificacao) //converte o salário para número
+
+        const salarioTotal = salario + bonificacao //const usado para valores sigilosos que não devem serem alterados
+        alert("A receber: "+salarioTotal)
+
+
+
+    </script>
+</body>
+
+</html>

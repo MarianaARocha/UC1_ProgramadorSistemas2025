@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Carrinho</title>
+</head>
+
+<body>
+    <h1>Mercadinho da Mari</h1>
+
+    <p>Arroz - R$ 15,90</p>
+    <button onclick="adicionarArrozCarrinho()">Adicionar</button>
+    <button onclick="removerArrozCarrinho()">Remover</button>
+    <hr>
+
+    <p>Feijão - R$ 11,40</p>
+    <button onclick="adicionarFeijaoCarrinho()">Adicionar</button>
+    <button onclick="removerFeijaoCarrinho()">Remover</button>
+    <hr>
+
+    <h3>Seu carrinho</h3>
+    <button onclick="verCarrinho()">Ver carrinho</button>
+    <button onclick="limparCarrinho()">Limpar carrinho</button>
+
+    <script>
+        let qntArroz = 0 
+        const precoArroz = 15.9
+
+        let qntFeijao = 0
+        const precoFeijao = 11.40
+        let somaArroz = 0
+
+        let somaFeijao = 0
+        let itensTotalCarrinho = 0 
+        let totalCompra = 0
+
+        //Adiciona um arroz no carrinho
+        function adicionarArrozCarrinho() {
+            qntArroz += 1
+            somaArroz = qntArroz * precoArroz
+            qntCarrinho()
+            valorTotalCompra()
+
+        }
+
+        //Remove um arroz do carrinho
+        function removerArrozCarrinho() {
+            qntArroz -= 1
+            somaArroz = qntArroz * precoArroz
+            qntCarrinho()
+            valorTotalCompra()
+        }
+
+
+        //Adiciona um feijão no carrinho
+        function adicionarFeijaoCarrinho() {
+            qntFeijao += 1
+            somaFeijao = qntFeijao * precoFeijao
+            qntCarrinho()
+            valorTotalCompra()
+        }
+
+        //Remove um feijão do carrinho
+        function removerFeijaoCarrinho() {
+            qntFeijao -= 1
+            somaFeijao = qntFeijao * precoFeijao
+            qntCarrinho()
+            valorTotalCompra()
+        }
+
+        //Quantidade de itens no carrinho
+        function qntCarrinho() {
+            itensTotalCarrinho = qntArroz + qntFeijao
+        }
+
+        //Soma valor total da compra
+        function valorTotalCompra() {
+            totalCompra = somaArroz + somaFeijao
+        }
+        
+
+        function verCarrinho() {
+            alert("Itens no carrinho: " + itensTotalCarrinho + "\nQnt arroz " + qntArroz + " | Total: R$ " + somaArroz + "\nQnt feijao: " + qntFeijao + " | Total: R$ " + somaFeijao + "\n\n Total da Compra: R$ " + totalCompra)
+        }
+
+
+    </script>
+</body>
+
+</html>

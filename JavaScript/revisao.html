@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão </title>
+</head>
+<body>
+    <script>
+
+        //Mostra a mensagem no console do navegador
+        //console.log("Revisão de JavaScript")
+
+        //Abre um poupop no navegador
+        // "\n" pula linha
+        //alert("Revisão de \nJavaScript") 
+
+        let tomate = prompt("Digite o preço do tomate: R$ ")
+        tomate = parseFloat(tomate) //parseFloat: converte em número com decimais
+        let hamburger = parseFloat (prompt("Digite o preço do hamburger: R$ "))
+        let queijo = prompt("Digite o preço do queijo: R$ ")
+        queijo = parseFloat (queijo)
+
+        alert("Cardápio:\nTomate: R$ " + tomate + "\nHamburger: R$ " +hamburger + "\nQueijo: R$ " + queijo)
+
+        let preco_custo = tomate + hamburger + queijo
+        let margem_lucro = 50
+        let preco_venda = preco_custo * margem_lucro / 100 + preco_custo
+
+        alert("O preço final do produto será: R$ "+preco_venda.toFixed(2)) //toFixed: quantas casas decimais (depois da vírgula)
+        
+    </script>
+</body>
+</html>

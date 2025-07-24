@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do Hotdog</title>
+</head>
+
+<body>
+
+    <h1>Atividade do HotDog</h1>
+
+    <p>Digite o valor da Salsicha</p>
+    <input type="text" id="valorSalsicha">
+
+    <p>Digite o valor do purê de batata</p>
+    <input type="text" id="valorPure">
+
+    <p>Digite o valor da Salada</p>
+    <input type="text" id="valorSalada">
+
+    <button>Atualizar Cardápio</button>
+    <hr>
+
+    <h2>Cardápio</h2>
+
+    dogSimples
+
+
+    <script>
+
+//salsicha 3
+//pure 5
+//salada 5 
+
+
+        const pao = 1.15
+        const batata_palha = 0.95
+
+        const ingredientes_fixos = pao + batata_palha
+
+        let salsicha = prompt("Digite o preço da salsicha ")
+        salsicha = parseFloat(salsicha)
+        let pure_batata = prompt("Digite o preço do purê de batata ")
+        pure_batata = parseFloat(pure_batata)
+        let salada = prompt("Digite o preço da salada ")
+        salada = parseFloat(salada)
+
+        alert("Valor dos produtos:\nPão: R$"+pao+"\nBatata Palha: R$" + batata_palha+
+         "\nSalsicha R$" + salsicha+  "\nPurê de Batata: R$" + pure_batata+ "\nSalada: R$" + salada)
+
+        let dog_simples = pao + batata_palha + salsicha + pure_batata
+        let dog_duplo = salsicha * 2 + pure_batata + pao + batata_palha
+        let dog_especial = (salsicha * 3) + (pure_batata * 2) + salada + pao + batata_palha
+
+        alert("Cardápio:\nDog simples: R$ "
+        +dog_simples.toFixed(2) + 
+        "\nDog duplo: R$ "
+        +dog_duplo.toFixed(2)+
+        "\nDog especial: R$"
+        +dog_especial.toFixed(2))
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

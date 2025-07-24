@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <h1>Carrinho</h1>
+    <p>Este é o seu carrinho de compras da loja</p>
+    <p>Quantidade de itens no carrinho <span id="itensCarrinho"> </span></p>
+    <button onclick="adicionarCarrinho()">Adicionar</button>
+    <button onclick="removerItemCarrinho()">Remover</button>
+    <button onclick="limparCarrinho()">Limpar</button>
+    <button onclick="verCarrinho()">Ver carrinho</button>
+    
+
+    <script>
+
+        let carrinho = 0
+
+        function adicionarCarrinho() {
+            //carrinho = carrinho + 1  //primerio o carrinho é 0. Então é 0 +1 = 1
+            //carrinho += 1 //tem o carrinho que é 0, então adiciona (+=) mais 1
+            carrinho++ //++ soma mais 1 (não da pra aumentar mais de 1)
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+
+
+        function verCarrinho() {
+            alert("Itens no carrinho: " + carrinho)
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+
+        function removerItemCarrinho(){
+            carrinho -= 1
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+
+        }
+
+        function limparCarrinho(){
+            carrinho = 0
+            document.querySelector("#itensCarrinho").innerHTML = carrinho
+        }
+    </script>
+</body>
+
+</html>
