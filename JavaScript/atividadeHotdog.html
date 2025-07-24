@@ -19,13 +19,18 @@
 
     <p>Digite o valor da Salada</p>
     <input type="text" id="valorSalada">
-
-    <button>Atualizar Cardápio</button>
+</br>
+</br>
+    <button onclick="valorItens()">Atualizar Cardápio</button>
     <hr>
 
     <h2>Cardápio</h2>
 
-    dogSimples
+    <ul>
+        <li>Dog Simples R$ <span id="valorDogSimples"></span> </li>
+        <li>Dog Duplo: R$ <span id="valorDogDuplo"></span> </li>
+        <li>Dog Especial: R$ <span id="valorDogEspecial"></span> </li>
+    </ul>
 
 
     <script>
@@ -38,28 +43,74 @@
         const pao = 1.15
         const batata_palha = 0.95
 
-        const ingredientes_fixos = pao + batata_palha
+        let salsicha
+        let pure
+        let salada
 
-        let salsicha = prompt("Digite o preço da salsicha ")
-        salsicha = parseFloat(salsicha)
-        let pure_batata = prompt("Digite o preço do purê de batata ")
-        pure_batata = parseFloat(pure_batata)
-        let salada = prompt("Digite o preço da salada ")
-        salada = parseFloat(salada)
+        let dog_simples 
+        let dog_duplo 
+        let dog_especial
+        let ingredientes_fixos
 
-        alert("Valor dos produtos:\nPão: R$"+pao+"\nBatata Palha: R$" + batata_palha+
-         "\nSalsicha R$" + salsicha+  "\nPurê de Batata: R$" + pure_batata+ "\nSalada: R$" + salada)
+        function PegarValorSalsicha(){
+            salsicha = document.querySelector("#valorSalsicha").value
+            salsicha = parseFloat(salsicha)
+            document.querySelector("#valorSalsicha").value = " "
 
-        let dog_simples = pao + batata_palha + salsicha + pure_batata
-        let dog_duplo = salsicha * 2 + pure_batata + pao + batata_palha
-        let dog_especial = (salsicha * 3) + (pure_batata * 2) + salada + pao + batata_palha
+            
+        }
 
-        alert("Cardápio:\nDog simples: R$ "
-        +dog_simples.toFixed(2) + 
-        "\nDog duplo: R$ "
-        +dog_duplo.toFixed(2)+
-        "\nDog especial: R$"
-        +dog_especial.toFixed(2))
+        function PegarValorPure(){
+            pure = document.querySelector("#valorPure").value
+            pure = parseFloat(pure)
+            document.querySelector("#valorPure").value = " "
+        }
+
+
+        function PegarValorSalada(){
+            salada = document.querySelector("#valorSalada").value
+            salada = parseFloat(salada)
+            document.querySelector("#valorSalada").value = " "
+            
+        }
+
+       
+
+        function valorItens(){
+
+            PegarValorSalsicha()
+            PegarValorPure()
+            PegarValorSalada()
+
+            ingredientes_fixos = pao + batata_palha
+
+            dog_simples = ingredientes_fixos + salsicha + pure
+            document.querySelector("#valorDogSimples").innerHTML = dog_simples.toFixed(2)
+
+
+            dog_duplo = salsicha * 2 + pure + ingredientes_fixos
+            document.querySelector("#valorDogDuplo").innerHTML = dog_duplo.toFixed(2)
+
+            dog_especial = (salsicha * 3) + (pure * 2) + salada + ingredientes_fixos
+            document.querySelector("#valorDogEspecial").innerHTML = dog_especial.toFixed(2)
+
+
+       
+
+    }
+
+
+
+        // alert("Valor dos produtos:\nPão: R$"+pao+"\nBatata Palha: R$" + batata_palha+
+        //  "\nSalsicha R$" + salsicha+  "\nPurê de Batata: R$" + pure_batata+ "\nSalada: R$" + salada)
+
+       
+        // alert("Cardápio:\nDog simples: R$ "
+        // +dog_simples.toFixed(2) + 
+        // "\nDog duplo: R$ "
+        // +dog_duplo.toFixed(2)+
+        // "\nDog especial: R$"
+        // +dog_especial.toFixed(2))
 
     </script>
 
