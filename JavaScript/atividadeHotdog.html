@@ -52,41 +52,18 @@
         let dog_especial
         let ingredientes_fixos
 
-        function PegarValorSalsicha(){
+        function valorItens(){
             salsicha = document.querySelector("#valorSalsicha").value
             salsicha = parseFloat(salsicha)
-            document.querySelector("#valorSalsicha").value = " "
-
-            
-        }
-
-        function PegarValorPure(){
             pure = document.querySelector("#valorPure").value
             pure = parseFloat(pure)
-            document.querySelector("#valorPure").value = " "
-        }
-
-
-        function PegarValorSalada(){
             salada = document.querySelector("#valorSalada").value
             salada = parseFloat(salada)
-            document.querySelector("#valorSalada").value = " "
-            
-        }
-
-       
-
-        function valorItens(){
-
-            PegarValorSalsicha()
-            PegarValorPure()
-            PegarValorSalada()
 
             ingredientes_fixos = pao + batata_palha
 
             dog_simples = ingredientes_fixos + salsicha + pure
             document.querySelector("#valorDogSimples").innerHTML = dog_simples.toFixed(2)
-
 
             dog_duplo = salsicha * 2 + pure + ingredientes_fixos
             document.querySelector("#valorDogDuplo").innerHTML = dog_duplo.toFixed(2)
@@ -94,23 +71,59 @@
             dog_especial = (salsicha * 3) + (pure * 2) + salada + ingredientes_fixos
             document.querySelector("#valorDogEspecial").innerHTML = dog_especial.toFixed(2)
 
+        }
+        
+
+    //     function PegarValorSalsicha(){
+    //         salsicha = document.querySelector("#valorSalsicha").value
+    //         salsicha = parseFloat(salsicha)
+    //         document.querySelector("#valorSalsicha").value = " "
+
+            
+    //     }
+
+    //     function PegarValorPure(){
+    //         pure = document.querySelector("#valorPure").value
+    //         pure = parseFloat(pure)
+    //         document.querySelector("#valorPure").value = " "
+    //     }
+
+
+    //     function PegarValorSalada(){
+    //         salada = document.querySelector("#valorSalada").value
+    //         salada = parseFloat(salada)
+    //         document.querySelector("#valorSalada").value = " "
+            
+    //     }
 
        
 
-    }
+    //     function valorItens(){
+
+    //         PegarValorSalsicha()
+    //         PegarValorPure()
+    //         PegarValorSalada()
+
+    //         ingredientes_fixos = pao + batata_palha
+
+    //         dog_simples = ingredientes_fixos + salsicha + pure
+    //         document.querySelector("#valorDogSimples").innerHTML = dog_simples.toFixed(2)
 
 
+    //         dog_duplo = salsicha * 2 + pure + ingredientes_fixos
+    //         document.querySelector("#valorDogDuplo").innerHTML = dog_duplo.toFixed(2)
 
-        // alert("Valor dos produtos:\nPão: R$"+pao+"\nBatata Palha: R$" + batata_palha+
-        //  "\nSalsicha R$" + salsicha+  "\nPurê de Batata: R$" + pure_batata+ "\nSalada: R$" + salada)
+    //         dog_especial = (salsicha * 3) + (pure * 2) + salada + ingredientes_fixos
+    //         document.querySelector("#valorDogEspecial").innerHTML = dog_especial.toFixed(2)
+
 
        
-        // alert("Cardápio:\nDog simples: R$ "
-        // +dog_simples.toFixed(2) + 
-        // "\nDog duplo: R$ "
-        // +dog_duplo.toFixed(2)+
-        // "\nDog especial: R$"
-        // +dog_especial.toFixed(2))
+
+    // }
+
+
+
+    
 
     </script>
 

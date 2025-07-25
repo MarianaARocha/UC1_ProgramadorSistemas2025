@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom CSS</title>
+<!--https://animate.style/-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+
+    <div id="usuarioOUempresa" class="animate__animated animate__fadeIn">
+        <button onclick="mostrarUsuario()">Cadastro de usuário</button>
+        <br /><br>
+        <button onclick="mostrarEmpresa()">Cadastro de empresa</button>
+    </div>
+
+
+    <div id="usuario">
+        <h2>Usuários</h2>
+        <p>Este é o cadastro de usuários</p>
+        <button onclick="mostrarInicio()">Voltar</button>
+    </div>
+
+    <div id="empresa">
+        <h2>Empresa</h2>
+        <p>Este é um cadastro de empresa</p>
+        <button onclick="mostrarInicio()">Voltar</button>
+    </div>
+
+    <script>
+
+        mostrarInicio()
+
+        function esconderTodos() {
+            document.querySelector("#empresa").style.display = "none" //esconde a empresa
+            document.querySelector("#usuario").style.display = "none" //esconde o usuario
+            document.querySelector("#usuarioOUempresa").style.display = "none" //esconde a decisão se sera empresa ou usuario
+        }
+
+        function mostrarInicio(){
+             esconderTodos() //esconde todos
+            document.querySelector("#usuarioOUempresa").style.display = "block" //mostra a decisão se será empresa ou usuário
+ 
+        }
+
+        function mostrarUsuario(){
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block" //mostra o usuario
+        }
+
+        function mostrarEmpresa(){
+            esconderTodos()
+            document.querySelector("#empresa").style.display = "block" //mostra a empresa
+        }
+
+    
+
+    </script>
+</body>
+
+</html>
